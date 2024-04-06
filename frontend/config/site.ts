@@ -16,6 +16,10 @@ export const siteConfig = {
             title: "playground",
             href: "/playground",
         },
+        {
+            title: "settings",
+            href: "/settings",
+        }
     ],
     links: {
         github: "https://github.com/samuelthmpsn/stockholm",

@@ -162,7 +162,7 @@ export default function Settings() {
                         <Link href="#">Integrations</Link>
                         <Link href="#">Support</Link>
                         <Link href="#">Organizations</Link>
-                        <Link href="#">Advanced</Link>
+                        <Link href="/settings/advanced">Advanced</Link>
                     </nav>
                     <div className="grid gap-6">
                         <Card x-chunk="dashboard-04-chunk-1">

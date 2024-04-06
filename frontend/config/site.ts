@@ -9,8 +9,8 @@ export const siteConfig = {
             href: "/dashboard",
         },
         {
-            title: "spotify",
-            href: "/spotify",
+            title: "testing",
+            href: "/testing",
         },
         {
             title: "playground",

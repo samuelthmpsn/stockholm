@@ -6,6 +6,8 @@ import {Input} from "@/components/ui/input";
 import {SearchOptions, SearchSpotify, SearchType} from "@/app/api/spotify/search";
 import React from "react";
 import Image from "next/image";
+import {Badge} from "@/components/ui/badge";
+import {Separator} from "@/components/ui/separator";
 
 
 export default function Spotify() {
@@ -62,13 +64,21 @@ export default function Spotify() {
                     <Button variant="destructive" onClick={handleClear}>Clear</Button>
                 </div>
             </Card>
-            {searchResults && searchResults.length > 0 ? (<div className="flex flex-col gap-6">
+            {searchQuery && searchResults && searchResults.length > 0 ? (<div className="flex flex-col gap-6">
                     {searchResults
                         .filter(result => result.images.length > 0) // Filter out results without images
                         .map((result, index) => (
                             <div className="flex flex-row gap-10" key={index}>
                                 <Image width={50} height={50} src={result.images[0].url} alt="artist image"/>
-                                <p>{result.name}</p>
+                                <div className="flex-none flex-col">
+                                    <div className="flex flex-row gap-4">
+                                        <p className="font-semibold">{result.name}</p>
+                                        <p className="text-accent">{result.popularity}</p>
+                                    </div>
+                                    {result['genres'].length > 0 ? <Badge>{result['genres'][0]}</Badge> : null}
+                                    {/*// <Badge>{result['genres'][0]}</Badge>*/}
+
+                                </div>
                             </div>
                         ))}
                 </div>

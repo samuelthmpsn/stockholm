@@ -6,12 +6,12 @@ export const siteConfig = {
     mainNav: [
         {
             title: "testing",
-            href: "/testing/general",
+            href: "/testing/artists",
         },
-        {
-            title: "settings",
-            href: "/settings",
-        }
+        // {
+        //     title: "settings",
+        //     href: "/settings",
+        // }
     ],
     links: {
         github: "https://github.com/samuelthmpsn/stockholm",

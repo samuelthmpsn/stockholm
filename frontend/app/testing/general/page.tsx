@@ -5,7 +5,7 @@ import {Button} from "@/components/ui/button";
 import {useToast} from "@/components/ui/use-toast";
 
 
-export default function Spotify() {
+export default function General() {
 
     const {toast} = useToast()
 
@@ -19,7 +19,7 @@ export default function Spotify() {
     return (
         <div className="flex">
             <Card className="w-full max-w-[500px] flex flex-col gap-2 p-10 bg-accent">
-                <CardTitle>Spotify</CardTitle>
+                <CardTitle>General</CardTitle>
                 <CardDescription>This is some descriptive text</CardDescription>
 
                 <Button onClick={handleClick}>Connect</Button>

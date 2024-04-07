@@ -5,16 +5,8 @@ export const siteConfig = {
     description: "Making music matter",
     mainNav: [
         {
-            title: "dashboard",
-            href: "/dashboard",
-        },
-        {
             title: "testing",
-            href: "/testing",
-        },
-        {
-            title: "playground",
-            href: "/playground",
+            href: "/testing/general",
         },
         {
             title: "settings",
